@@ -18,7 +18,7 @@
     for ($i = 0; $i < strlen($name); $i++) {
         $isFound = false;
         foreach ($provinces as $province) {
-            if (strtolower($name[$i]) == strtolower($province[$i])) {
+            if (strtolower($name[$i]) == strtolower($province[0])) {
                 $kkn = $province;
                 $isFound = true;
                 break;
